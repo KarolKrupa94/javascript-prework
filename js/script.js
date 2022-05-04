@@ -1,9 +1,9 @@
-var argButtonName, ButtonPaper, buttonRock, buttonScissors, buttonTest;
 
-buttonTest = document.getElementById('button-test');
-buttonRock = document.getElementById('button-rock');
-buttonScissors = document.getElementById('button-scissors');
-ButtonPaper = document.getElementById('button-paper');
+
+const buttonTest = document.getElementById('button-test');
+const buttonRock = document.getElementById('button-rock');
+const buttonScissors = document.getElementById('button-scissors');
+const ButtonPaper = document.getElementById('button-paper');
 /**
  * Describe this function...
  */
@@ -11,7 +11,7 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+ 
 
 /**
  * Describe this function...
@@ -49,12 +49,13 @@ function displayResult(argPlayerMove, argComputerMove) {
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 
+const playerInput = '';
 console.log('wybór ruchu gracza to: ' + playerInput);
-playerMove = argButtonName;
+const playerMove = argButtonName;
 console.log('ruch gracza to: ' + playerMove);
-randomNumber = Math.floor(Math.random() * 3 + 1);
+const randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
-computerMove = getMoveName(randomNumber);
+const computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 
